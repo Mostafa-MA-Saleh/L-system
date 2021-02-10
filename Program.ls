@@ -1,6 +1,6 @@
 R = "A" > "AFB"
+I = '5'
 A = "AB"
 #This is a comment
-I = "5"
 R = "B" > "BBA"
 R = "F" > "CF"

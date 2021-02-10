@@ -1,4 +1,4 @@
-class Token(val text: String, val type: Type) {
+class Token(val text: String, val type: Type, val lineNumber: Int) {
     enum class Type(val value: Char?) {
         STRING('\"'),
         EQUALS('='),
@@ -17,6 +17,6 @@ class Token(val text: String, val type: Type) {
     }
 
     override fun toString(): String {
-        return "Text: $text, type: ${type.name}"
+        return "Text: $text, type: ${type.name}, at line: $lineNumber"
     }
 }

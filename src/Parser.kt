@@ -37,7 +37,7 @@ class Parser(private val tokens: List<Token>) {
                     position += 5
                 }
                 tokens.getOrNull(position)?.type === Token.Type.EOF -> break
-                else -> throw RuntimeException("Syntax Error: ${tokens[position]}")
+                else -> throw RuntimeException("Syntax Error: ${tokens[position + 1]}")
             }
         }
         return Result(
